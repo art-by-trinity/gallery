@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Art by Trinity — Сюрреализм в цвете</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cinzel Decorative', serif;
+      background: linear-gradient(145deg, #0c0c23, #1f1b3f);
+      color: #eae6f7;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 40px;
+      text-align: center;
+      background-color: rgba(30, 20, 60, 0.8);
+      box-shadow: 0 0 15px rgba(155, 100, 255, 0.3);
+    }
+
+    nav a {
+      color: #d7b9ff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 8px 16px;
+      border: 2px solid transparent;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      border: 2px solid #bc89ff;
+      background-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 5px #bc89ff;
+    }
+
+    #hero {
+      padding: 80px 20px;
+      background-image: url('dreamscape.jpg');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      text-shadow: 0 0 8px #461b5b;
+    }
+
+    #hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    #hero p {
+      font-size: 20px;
+      color: #f5daff;
+    }
+
+    #gallery {
+      padding: 60px 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .artwork video {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(200, 100, 255, 0.3);
+    }
+
+    #about, #contact {
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.05);
+      margin-top: 40px;
+      border-top: 1px solid #8d6bb0;
+    }
+
+    .button-magica {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 20px auto;
+      font-size: 16px;
+      color: #fff;
+      background-color: #a97aff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #a97aff;
+      transition: transform 0.3s ease;
+    }
+
+    .button-magica:hover {
+      transform: scale(1.1);
+      background-color: #caaaff;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Art by Trinity</h1>
+    <nav>
+      <a href="#gallery">Галерея</a>
+      <a href="#about">Обо мне</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Добро пожаловать в царство сновидений</h2>
+    <p>Здесь искусство говорит на языке подсознания, а каждый штрих ведёт к новому измерению.</p>
+    <button class="button-magica" onclick="alert('Ты нажал на портал в другое измерение 💫')">Войти в грёзу</button>
+  </section>
+
+  <section id="gallery">
+    <h2>Галерея сновидений</h2>
+    <div class="artwork">
+      <video autoplay muted loop>
+        <source src="surreal_dream1.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="artwork">
+      <video autoplay muted loop>
+        <source src="surreal_dream2.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>Обо мне</h2>
+    <p>Меня зовут Тринити. Я создаю образы, в которых времени нет, а пространство танцует. Каждый кадр моей галереи — как шёпот сна, который ты почти вспомнил...</p>
+  </section>
+
+  <section id="contact">
+    <h2>Связь с миром бодрствования</h2>
+    <p>Email: trinity.dreams@example.com</p>
+    <p>Instagram: @dream.by.trinity</p>
+    <button class="button-magica" onclick="alert('Письмо отправлено в космос 🌌')">Отправить послание</button>
+  </section>
+
+</body>
+</html>
